@@ -1,0 +1,287 @@
+*{
+    margin: 0; 
+    padding: 0; 
+    border: 0; outline: 0;
+    list-style: none; 
+    box-sizing: border-box; 
+    text-decoration: none;
+}
+body{
+    overflow: hidden;
+    background: url(./img/1618415620_54-phonoteka_org-p-cherno-serii-fon-59.jpg)
+}
+.carousel-control-prev-icon{
+    margin-top: -250px;
+    background: url(./img/left-long-solid.svg);
+    box-shadow: 1px 1px 8px #000;
+    border-radius: 8px;
+    transform: scale(1.5);
+}
+.carousel-control-next-icon{
+    margin-top: -250px;
+    background: url(./img/right-long-solid.svg);
+    box-shadow: 1px 1px 8px #000;
+    border-radius: 8px;
+    transform: scale(1.5);
+}
+.carousel-indicators [data-bs-target]{
+    background-color: red;
+    margin-top: -280px;
+}
+h5{
+    color: darkgray;
+    text-shadow: 1px 1px 2px #000;
+    text-decoration: underline;
+    animation: title 2s linear infinite alternate;
+}
+@keyframes title{
+    0%{
+        letter-spacing: 3px;
+        transform: scale(1.2);
+    }
+    50%{
+        color: cyan;
+    }
+    100%{
+        transform: scale(0.9);
+    }
+}
+p{
+    color: cornflowerblue;
+    text-shadow: 1px 1px 2px #000;
+    font-style: italic;
+    animation: paragraph 2s linear infinite alternate;
+}
+@keyframes paragraph{
+    0%{
+        transform: scale(0.9);
+    }
+    50%{
+        color: coral;
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+.carousel{
+    margin: 150px auto;
+    margin-left: 550px;
+    height: 800px;
+    max-width: 800px;
+    cursor: pointer;
+    animation: slider 2s linear;
+}
+@keyframes slider{
+    0%{
+        opacity: 0;
+        transform: translateX(300px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.w-100{
+    border-radius: 5px;
+    border: 5px inset #004e81;
+}
+.carousel-caption__img{
+    width: 150px;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+.carousel-caption__img:nth-child(2){
+    transform: scale(1.2) translateY(-20px);
+}
+.carousel-item__img{
+    width: 150px;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+.carousel-item__img:nth-child(2){
+    transform: scale(1.2) translateY(-20px);
+}
+.carousel-caption__photo{
+    width: 163px;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+.carousel-caption__photo:nth-child(2){
+    transform: scale(1.2) translateY(-20px);
+}
+.header {
+    background-color: #000;
+    color: #fff;
+    height: 90px;
+    animation: header 2s linear;
+}
+@keyframes header{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.line{
+    height: 7px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    animation: line 2.5s linear infinite alternate;
+}
+@keyframes line{
+    0%{
+        background-color: aquamarine;
+    }
+    50%{
+        background-color: cadetblue;
+    }
+    100%{
+        background-color: darksalmon;
+    }
+}
+.logo {
+    width: 65px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 20px;
+    animation: logo 6s linear infinite;
+}
+@keyframes logo{
+    0%{
+        transform: rotate(-360deg);
+    }
+}
+.nav-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav-info__item {
+    margin-top: -60px;
+    text-decoration: overline;
+    transition: 0.4s;
+}
+.nav-info__item:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    color: aquamarine;
+}
+
+
+
+
+
+
+.title{
+    text-align: center;
+    font-size: 22px;
+    text-shadow: 1px 1px 3px #000;
+    font-style: italic;
+    transition: 0.4s;
+}
+.title:hover{
+    cursor: pointer;
+    letter-spacing: 1px;
+    color: aqua;
+    transform: scale(1.1);
+}
+.form{
+    margin-left: 100px;
+    width: 350px;
+    height: 200px;
+    margin-top: -800px;
+    color: aliceblue;
+    animation: form 2s linear;
+}
+@keyframes form{
+    0%{
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.form-floating{
+    width: 300px;
+    margin: 0 auto;
+    transition: 0.4s;
+}
+.form-floating:hover{
+    color: aqua;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+}
+.form-control{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+}
+.form-control:hover{
+    cursor: pointer;
+}
+.form-control:focus{
+    background-color: cadetblue;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+.footer{
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    margin-top: 350px;
+    animation: footer 2s linear;
+    color: #fff;
+}
+@keyframes footer{
+    0%{
+        opacity: 0;
+        transform: translateY(400px);
+    }
+}
+.footer-line{
+    height: 7px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    animation: line 2.5s linear infinite alternate;
+}
+.footer-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-info__item{
+    margin-top: -60px;
+    text-decoration: overline;
+    transition: 0.4s;
+    animation: footer-text 2s linear infinite alternate;
+}
+.footer-info__item:hover{
+    cursor: pointer;
+}
+@keyframes footer-text{
+    0%{
+        color: aquamarine;
+        transform: scale(0.8);
+    }
+    50%{
+        color: coral;
+    }
+    100%{
+        color: dodgerblue;
+        transform: scale(1.1) ;
+    }
+}
+.icons{
+    width: 250px;
+    height: 44px;
+    margin-left: 1100px;
+    margin-top: 20px;
+}
+.icons:hover{
+    cursor: pointer;
+}
